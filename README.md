@@ -25,7 +25,7 @@ The primary source of Data used here is an Excel data file, CSV file.
 - POWER BI
   
 ### TOOLS USED
-- Microsoft Excel (Download here)https://1drv.ms/x/c/45b106d15656cf28/EYXe7GV0cORIk3pJQxx0qfMBEP0vvfRZWVw60YwZD1uWkA?e=2UVmOq
+- Microsoft Excel [(Download here)]https://1drv.ms/x/c/45b106d15656cf28/EYXe7GV0cORIk3pJQxx0qfMBEP0vvfRZWVw60YwZD1uWkA?e=2UVmOq
 - Data cleaning
 - Data Visualization
 - Calcutions
