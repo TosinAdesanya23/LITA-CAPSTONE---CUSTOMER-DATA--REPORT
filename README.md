@@ -45,10 +45,14 @@ On the initial phase of Data cleaning and preparations, I performed the followin
 ### EXPLORATORY DATA ANALYSIS
 EDA involved the exploration of the data to answer some questions about the Data such as:
 
-_- T_otal Sales for each product category and What product is the highest selling?
-- what is the overall sales trend?
-- number of sales transaction in each region, and what region has the highest sales?
-- percentage of total sales by region?__
+- to retrieve the total number of customers from each region.
+- to find the most popular subscription type by the number of customers.
+- to find customers who canceled their subscription within 6 months.
+- to calculate the average subscription duration for all customers.
+- to find customers with subscriptions longer than 12 months.
+- to calculate total revenue by subscription type.
+- to find the top 3 regions by subscription cancellations.
+- to find the total number of active and canceled subscription
 - 
 ### DATA ANALYSIS AND VISUALISATION - MS EXCEL
 ### DATA ANALYSIS - SQL
