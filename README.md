@@ -57,3 +57,78 @@ EDA involved the exploration of the data to answer some questions about the Data
 ### DATA ANALYSIS AND VISUALISATION - MS EXCEL
 ### DATA ANALYSIS - SQL
 #### SQL QUERIES 
+**Here are the revised SQL queries based on the single table structure:**
+
+1. **Total number of customers from each region:**
+
+   ```sql
+   SELECT region, COUNT(*) AS total_customers
+   FROM customers
+   GROUP BY region;
+   ```
+
+2. **Most popular subscription type:**
+
+   ```sql
+   SELECT subscription_type, COUNT(*) AS total_customers
+   FROM customers
+   GROUP BY subscription_type
+   ORDER BY total_customers DESC
+   LIMIT 1;
+   ```
+
+3. **Customers who canceled within 6 months:**
+
+   ```sql
+   SELECT *
+   FROM customers
+   WHERE end_date IS NOT NULL
+   AND end_date BETWEEN CURDATE() - INTERVAL 6 MONTH AND CURDATE();
+   ```
+
+4. **Average subscription duration:**
+
+   ```sql
+   SELECT AVG(DATEDIFF(end_date, start_date)) AS avg_duration
+   FROM customers
+   WHERE end_date IS NOT NULL;
+   ```
+
+5. **Customers with subscriptions longer than 12 months:**
+
+   ```sql
+   SELECT *
+   FROM customers
+   WHERE end_date IS NOT NULL
+   AND DATEDIFF(end_date, start_date) > 365;
+   ```
+
+6. **Total revenue by subscription type:**
+
+   ```sql
+   SELECT subscription_type, SUM(revenue) AS total_revenue
+   FROM customers
+   GROUP BY subscription_type;
+   ```
+
+7. **Top 3 regions by subscription cancellations:**
+
+   ```sql
+   SELECT region, COUNT(*) AS total_cancellations
+   FROM customers
+   WHERE end_date IS NOT NULL
+   GROUP BY region
+   ORDER BY total_cancellations DESC
+   LIMIT 3;
+   ```
+
+8. **Total active and canceled subscriptions:**
+
+   ```sql
+   SELECT
+       SUM(CASE WHEN end_date IS NULL THEN 1 ELSE 0 END) AS active_subscriptions,
+       SUM(CASE WHEN end_date IS NOT NULL THEN 1 ELSE 0 END) AS canceled_subscriptions
+   FROM customers;
+   ```
+
+These queries should now work with your simplified table structure.
