@@ -131,4 +131,4 @@ EDA involved the exploration of the data to answer some questions about the Data
    FROM customers;
    ```
 
-These queries should now work with your simplified table structure.
+
