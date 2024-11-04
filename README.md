@@ -131,4 +131,6 @@ EDA involved the exploration of the data to answer some questions about the Data
    FROM customers;
    ```
 
+DATA VISUALISATION - POWER BI
+![Customer data visualisation](https://github.com/user-attachments/assets/f5c31789-3946-457a-b343-8ffc3c74aaf5)
 
